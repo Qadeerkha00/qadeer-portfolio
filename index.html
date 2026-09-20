@@ -362,10 +362,43 @@
             </p>
         </div>
 
-        <!-- Contact Form -->
+        <!-- Contact Form -->        
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+
+    <!-- Email -->    
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=qadeer.khan.web@gmail.com"
+   target="_blank"
+       class="bg-gray-900 border border-gray-800 rounded-2xl p-6
+              hover:border-blue-500 transition">
+        <p class="text-blue-400 text-sm mb-2">EMAIL</p>
+      <h3 class="text-lg font-semibold">qadeer.khan.web@gmail.com</h3>
+        <p class="text-gray-400 text-sm mt-2">
+            Send me an email
+        </p>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/923113805802"
+       target="_blank"
+       class="bg-gray-900 border border-gray-800 rounded-2xl p-6
+              hover:border-blue-500 transition">
+        <p class="text-blue-400 text-sm mb-2">WHATSAPP</p>
+        <h3 class="text-lg font-semibold">
+            Chat on WhatsApp
+        </h3>
+        <p class="text-gray-400 text-sm mt-2">
+            Message me directly
+        </p>
+    </a>
+
+</div>
+
+
+
+
         <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8">
 
-            <form class="space-y-6">
+            <form action="https://formspree.io/f/mjykyyle" method="POST" class="space-y-6">
 
                 <div>
                     <label class="block text-sm text-gray-300 mb-2">
@@ -373,8 +406,9 @@
                     </label>
 
                     <input
-                        type="text"
+                        type="text" name="name"
                         placeholder="Enter your name"
+            
                         class="w-full bg-gray-950 border border-gray-700
                                rounded-lg px-4 py-3 outline-none
                                focus:border-blue-500 transition">
@@ -386,7 +420,7 @@
                     </label>
 
                     <input
-                        type="email"
+                        type="email" name="email"
                         placeholder="Enter your email"
                         class="w-full bg-gray-950 border border-gray-700
                                rounded-lg px-4 py-3 outline-none
@@ -398,8 +432,8 @@
                         Message
                     </label>
 
-                    <textarea
-                        rows="5"
+                    <textarea name="message"
+                         rows="5"
                         placeholder="Write your message..."
                         class="w-full bg-gray-950 border border-gray-700
                                rounded-lg px-4 py-3 outline-none
@@ -418,6 +452,7 @@
         </div>
 
     </div>
+    
 </section>
 
 
